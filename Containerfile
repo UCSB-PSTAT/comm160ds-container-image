@@ -4,8 +4,8 @@ MAINTAINER LSIT Systems <lsitops@lsit.ucsb.edu>
 
 USER root
 
-RUN mamba install -y scikit-learn twint seaborn
+RUN mamba install -y scikit-learn seaborn
 
-#RUN pip install <libraries>
+RUN pip install twint
 
 USER $NB_USER
