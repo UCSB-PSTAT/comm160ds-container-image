@@ -4,8 +4,8 @@ MAINTAINER LSIT Systems <lsitops@lsit.ucsb.edu>
 
 USER root
 
-#RUN mamba install -y astropy <libraries>
+RUN mamba install -y scikit-learn seaborn aiohttp  pysocks geopy googletrans cchardet nest-asyncio
 
-#RUN pip install <libraries>
+RUN pip install twint
 
 USER $NB_USER
