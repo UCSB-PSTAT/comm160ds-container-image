@@ -4,7 +4,7 @@ MAINTAINER LSIT Systems <lsitops@lsit.ucsb.edu>
 
 USER root
 
-RUN mamba install -y scikit-learn seaborn aiohttp  pysocks geopy googletrans cchardet nest-asyncio nltk spacy textblob
+RUN mamba install -y scikit-learn seaborn aiohttp async_timeout pysocks geopy googletrans cchardet nest-asyncio nltk spacy textblob
 
 RUN /usr/local/bin/fix-permissions "${CONDA_DIR}" || true
 
